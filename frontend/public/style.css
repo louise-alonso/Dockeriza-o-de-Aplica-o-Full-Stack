@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a, #ff69b4, #8a2be2);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #ff69b4;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+}
+
+form {
+    display: flex;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 5px 0 0 5px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff69b4;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    background: #ff69b4;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background: #ff1493;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+li:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.actions button {
+    margin-left: 8px;
+    background: #8a2be2;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.actions button:hover {
+    background: #7b1fa2;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.4);
+}
+
+.actions .complete {
+    background: #ff69b4;
+}
+
+.actions .complete:hover {
+    background: #ff1493;
+}

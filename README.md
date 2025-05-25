@@ -97,10 +97,12 @@ Execute:
 docker ps
 ```
 
-Você deve ver três containers ativos: frontend (Nginx), backend (Node.js) e o banco (PostgreSQL).
-CONTAINER ID   IMAGE                           COMMAND                  CREATED          STATUS                      PORTS                    NAMES
-6b5a8b485d44   projeto_docker_20251-frontend   "/docker-entrypoint.…"   16 minutes ago   Up 16 minutes (unhealthy)   0.0.0.0:8080->80/tcp     projeto_docker_20251-frontend-1
-ead8c410b674   projeto_docker_20251-backend    "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes (unhealthy)   0.0.0.0:3000->3000/tcp   projeto_docker_20251-backend-1
-63c5b0fd8d9d   postgres:15                     "docker-entrypoint.s…"   16 minutes ago   Up 16 minutes (healthy)     0.0.0.0:5432->5432/tcp   projeto_docker_20251-db-1
----
+Você deve ver três containers ativos: **frontend (Nginx)**, **backend (Node.js)** e o **banco (PostgreSQL)**.
+
+| CONTAINER ID | IMAGE                        | COMMAND                    | CREATED         | STATUS            | PORTS                     | NAMES                             |
+| ------------- | ---------------------------- | -------------------------- | --------------- | ----------------- | ------------------------- | ---------------------------------- |
+| 6b5a8b485d44  | projeto_docker_20251-frontend | "/docker-entrypoint.…"     | 16 minutes ago  | Up 16 minutes (**unhealthy**) | 0.0.0.0:8080->80/tcp      | projeto_docker_20251-frontend-1   |
+| ead8c410b674  | projeto_docker_20251-backend  | "docker-entrypoint.s…"     | 16 minutes ago  | Up 16 minutes (**unhealthy**) | 0.0.0.0:3000->3000/tcp    | projeto_docker_20251-backend-1    |
+| 63c5b0fd8d9d  | postgres:15                  | "docker-entrypoint.s…"     | 16 minutes ago  | Up 16 minutes (**healthy**)   | 0.0.0.0:5432->5432/tcp    | projeto_docker_20251-db-1         |
+
 

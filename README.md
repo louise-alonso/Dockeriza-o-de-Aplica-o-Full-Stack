@@ -90,12 +90,6 @@ ports:
 * 🔗 **API Backend:** [http://localhost:3000/api/tasks](http://localhost:3000/api/tasks)
 * 🗄️ **Banco de Dados PostgreSQL:**
 
-  * **Host:** `localhost`
-  * **Porta:** `5432`
-  * **Banco:** `todolist`
-  * **Usuário:** `postgres`
-  * **Senha:** `postgres`
-
 ## ⛔ Para parar os containers
 
 ```bash

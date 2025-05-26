@@ -49,19 +49,13 @@ git clone https://github.com/seu-usuario/projeto-todolist.git
 cd projeto-todolist
 ```
 
-2. Instale as dependências do projeto:
-
-```bash
-npm install
-```
-
-3. Construa e suba os containers:
+2. Construa e suba os containers:
 
 ```bash
 docker-compose up --build
 ```
 
-4. Acesse os serviços:
+3. Acesse os serviços:
 
 * 🌐 **Frontend:** [http://localhost:8080](http://localhost:8080)
 * 🔗 **API Backend:** [http://localhost:3000/api/tasks](http://localhost:3000/api/tasks)
@@ -73,7 +67,7 @@ docker-compose up --build
   * Usuário: `postgres`
   * Senha: `postgres`
 
-5. Para parar os containers:
+4. Para parar os containers:
 
 ```bash
 docker-compose down

@@ -116,8 +116,9 @@ Você deve ver três containers ativos: **frontend (Nginx)**, **backend (Node.js
 
 | CONTAINER ID | IMAGE                        | COMMAND                    | CREATED         | STATUS            | PORTS                     | NAMES                             |
 | ------------- | ---------------------------- | -------------------------- | --------------- | ----------------- | ------------------------- | ---------------------------------- |
-| 6b5a8b485d44  | projeto_docker_20251-frontend | "/docker-entrypoint.…"     | 16 minutes ago  | Up 16 minutes (**unhealthy**) | 0.0.0.0:8080->80/tcp      | projeto_docker_20251-frontend-1   |
-| ead8c410b674  | projeto_docker_20251-backend  | "docker-entrypoint.s…"     | 16 minutes ago  | Up 16 minutes (**unhealthy**) | 0.0.0.0:3000->3000/tcp    | projeto_docker_20251-backend-1    |
-| 63c5b0fd8d9d  | postgres:15                  | "docker-entrypoint.s…"     | 16 minutes ago  | Up 16 minutes (**healthy**)   | 0.0.0.0:5432->5432/tcp    | projeto_docker_20251-db-1         |
+| d496ed25917c    | dockeriza-o-de-aplica-o-full-stack-frontend  | "/docker-entrypoint.…"     | 16 minutes ago  | Up 7 seconds (health: starting) | 0.0.0.0:8080->80/tcp      | dockeriza-o-de-aplica-o-full-stack-frontend-1   |
+| b800432bac32   | dockeriza-o-de-aplica-o-full-stack-backend | "docker-entrypoint.s…"     | 16 minutes ago  | Up 29 minutes (healthy)   | 0.0.0.0:3000->3000/tcp    | dockeriza-o-de-aplica-o-full-stack-backend-1    |
+| dec5c8b60086  | postgres:15                  | "docker-entrypoint.s…"     | 16 minutes ago  | Up 29 minutes (healthy)    | 0.0.0.0:5432->5432/tcp    | dockeriza-o-de-aplica-o-full-stack-db-1        |
+
 
 

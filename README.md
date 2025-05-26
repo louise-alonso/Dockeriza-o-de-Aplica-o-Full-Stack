@@ -30,7 +30,7 @@ projeto-todolist/
 │   └── script.js           # Lógica do frontend
 ├── docker-compose.yml      # Orquestração dos containers
 └── README.md               # Documentação
-
+```
 ---
 
 ## 🏗️ Pré-requisitos
@@ -40,40 +40,67 @@ projeto-todolist/
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## 🚀 Guia de Execução do Projeto Todo List
 
-1. Clone o repositório:
+## 📥 Clone o repositório
 
 ```bash
 git clone https://github.com/seu-usuario/projeto-todolist.git
-cd projeto-todolist
+````
+
+## 📂 Acesse a pasta do projeto
+
+```bash
+cd .\Dockeriza-o-de-Aplica-o-Full-Stack\
 ```
 
-2. Construa e suba os containers:
+## 🐳 Verifique se o Docker está funcionando
+
+* Verifique se o **Docker Desktop** está instalado na sua máquina.
+* Abra o **Docker Desktop**.
+* Aguarde até que o ícone do Docker na bandeja do sistema mostre que está **rodando** (ícone estático, não animado).
+
+## 🔧 Construa e suba os containers
 
 ```bash
 docker-compose up --build
 ```
 
-3. Acesse os serviços:
+> ⚠️ **Atenção:**
+> Se a porta `8080` estiver em uso na sua máquina, você pode alterá-la no arquivo `docker-compose.yml`.
+> Edite a seção do serviço `frontend` de:
 
-* 🌐 **Frontend:** [http://localhost:8080](http://localhost:8080)
+```yaml
+ports:
+  - "8080:80"
+```
+
+> Para, por exemplo:
+
+```yaml
+ports:
+  - "8081:80"
+```
+
+> Assim, o frontend ficará disponível em `http://localhost:8081`.
+
+## 🔗 Acesse os serviços
+
+* 🌐 **Frontend:** [http://localhost:8080](http://localhost:8080) *(ou a porta configurada)*
 * 🔗 **API Backend:** [http://localhost:3000/api/tasks](http://localhost:3000/api/tasks)
-* 🗄️ **Banco de Dados PostgreSQL:** localhost:5432
+* 🗄️ **Banco de Dados PostgreSQL:**
 
-  * Host: `localhost`
-  * Porta: `5432`
-  * Banco: `todolist`
-  * Usuário: `postgres`
-  * Senha: `postgres`
+  * **Host:** `localhost`
+  * **Porta:** `5432`
+  * **Banco:** `todolist`
+  * **Usuário:** `postgres`
+  * **Senha:** `postgres`
 
-4. Para parar os containers:
+## ⛔ Para parar os containers
 
 ```bash
 docker-compose down
 ```
-
----
 
 ## 🏗️ Funcionamento Esperado
 
